@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+/* ------------- */
+/* Tag Selectors */
+/* ------------- */
+
+html{
+    font-family: sans-serif;
+}
+
+header{
+    height: 200px;
+    width: 100%;
+    background-color: cadetblue;
+
+}
+
+header h1{
+    /* width: 5vw; //TODO: revisit fixing size of text to container*/
+    text-align: center;
+    padding: 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background-color: cadetblue;
+}
+
+/* ------------- */
+/* Class Selectors */
+/* ------------- */
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1{
+    width: 25%;
+}
+
+/* menu items */
+.col-1 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.col-1 ul li{
+}
+
+
+.col-1 ul li a:hover{
+    background-color:dimgray;
+}
+
+.col-1 ul li a{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 4px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+
+.col-2{
+    width: 55%;
+}
+
+.col-3{
+    width: 20%;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+}
+
+/*
+.floating-col{
+    float: left;
+    padding: 15px;
+}
+*/
+
+.side-info{
+
+}
+
+/* ------------- */
+/* ID Selectors */
+/* ------------- */
+#page-title{
+    margin-top: 1px;
+}
+
+/* ------------- */
+/* Media Rules */
+/* ------------- */
+/*tables/ipads*/
+@media only screen and (max-width: 768px){
+    .col-1, .col-3{
+        width: 25%;
+    }
+
+    .col-2{
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    [class*="col-"]{
+        width: 100%;
+    }
+}
