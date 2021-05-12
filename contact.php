@@ -38,7 +38,7 @@
 <?php include('templates/header.php'); ?>
 <div class="col-2">
     <h2 id="page-title">Contact</h2>
-    <form>
+    <form method="POST">
         <div class="input-row">
             <div class="input-label"><label>First Name:</label></div>
             <div class="input-field"><input type="text" name="first_name" onfocus="clearInput(this)" onfocusout="clearInput(this)" value="Enter First Name" defaultValue="Enter First Name"></div>
@@ -59,6 +59,11 @@
             <div class="input-fields">
                 <input type="submit" name="submit" value="submit"></input>
                 <button type="button">Reset</button>
+                <?php
+                    if(isset($_POST)){
+                        echo "<h3>Post is Set</h3>";
+                    }
+                ?>
             </div>
         </div>
     </form>
