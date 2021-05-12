@@ -100,6 +100,20 @@ footer{
 }
 
 /* ------------- */
+/* Form Styles */
+/* ------------- */
+.input-row{
+    padding: 5px;
+    margin: 5px;
+}
+
+.input-row input{
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+/* ------------- */
 /* Media Rules */
 /* ------------- */
 /*tables/ipads*/
