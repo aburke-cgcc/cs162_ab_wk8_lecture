@@ -68,6 +68,10 @@ footer{
     background-color: #36C9C8;
 }
 
+.invalid{
+    border-color: red;
+}
+
 .col-2{
     width: 55%;
 }
